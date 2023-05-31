@@ -29,7 +29,13 @@ const register = async (req, res) => {
   });
 
   const origin = "http://localhost:3000";
+// const newOrigin = 'https://react-node-user-workflow-front-end.netlify.app';
 
+  // const tempOrigin = req.get('origin');
+  // const protocol = req.protocol;
+  // const host = req.get('host');
+  // const forwardedHost = req.get('x-forwarded-host');
+  // const forwardedProtocol = req.get('x-forwarded-proto');
   await sendVerificationEmail({
     name: user.name,
     email: user.email,

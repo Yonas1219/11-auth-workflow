@@ -51,7 +51,7 @@ const ForgotPassword = () => {
       {alert.show && (
         <div className={`alert alert-${alert.type}`}>{alert.text}</div>
       )}
-      {!success && (
+      {!success && (  
         <form
           className={loading ? 'form form-loading' : 'form'}
           onSubmit={handleSubmit}
